@@ -1,10 +1,14 @@
 {
+  "scripts": {
+    "build": "tsc"
+  },
   "dependencies": {
     "aws-sdk": "^2.528.0"
   },
   "devDependencies": {
     "@types/aws-lambda": "^8.10.31",
     "@types/node": "^12.7.5",
-    "tslint": "^5.20.0"
+    "tslint": "^5.20.0",
+    "typescript": "^3.6.3"
   }
 }

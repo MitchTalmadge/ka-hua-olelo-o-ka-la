@@ -2,12 +2,15 @@ language: node_js
 node_js:
   - "10"
 script:
-  - npm build
+  - npm run build
 deploy:
   provider: lambda
   edge: true
+  skip_cleanup: true
   access_key_id: $AWS_ACCESS_KEY_ID
   secret_access_key: $AWS_SECRET_ACCESS_KEY
   function_name: "ka-hua-olelo-o-ka-la"
   region: "us-west-2"
   runtime: "nodejs10.x"
+  handler_name: "handler"
+  module_name: "out/index"
