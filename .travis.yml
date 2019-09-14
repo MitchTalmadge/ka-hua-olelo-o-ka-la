@@ -10,3 +10,4 @@ deploy:
   secret_access_key: $AWS_SECRET_ACCESS_KEY
   function_name: "ka-hua-olelo-o-ka-la"
   region: "us-west-2"
+  runtime: "nodejs10.x"
