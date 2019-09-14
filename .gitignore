@@ -1,6 +1,8 @@
 .idea
 *.iml
 
+out
+
 ### Node
 # Logs
 logs
