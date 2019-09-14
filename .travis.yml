@@ -5,9 +5,8 @@ script:
   - npm build
 deploy:
   provider: lambda
-  function_name: "ka-hua-olelo-o-ka-la"
-  region: "us-west-2"
-  role: $AWS_ROLE
-  runtime: "nodejs10.x"
+  edge: true
   access_key_id: $AWS_ACCESS_KEY_ID
   secret_access_key: $AWS_SECRET_ACCESS_KEY
+  function_name: "ka-hua-olelo-o-ka-la"
+  region: "us-west-2"
