@@ -3,7 +3,8 @@
     "build": "tsc"
   },
   "dependencies": {
-    "aws-sdk": "^2.528.0"
+    "aws-sdk": "^2.528.0",
+    "twitter": "^1.7.1"
   },
   "devDependencies": {
     "@types/aws-lambda": "^8.10.31",
